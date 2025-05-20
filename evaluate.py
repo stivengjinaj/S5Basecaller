@@ -1,11 +1,10 @@
 import torch
 from torch.utils.data import DataLoader
-import numpy as np
 from tqdm import tqdm
 
+from NanoporeDataset import NanoporeDataset, IDX2BASE, nanopore_collate
 # Import from our files
 from S5Basecaller import (S5Basecaller)
-from NanoporeDataset import NanoporeDataset, IDX2BASE, nanopore_collate
 
 
 def decode_ctc(predictions, blank=4):
