@@ -8,8 +8,8 @@ import os
 from tqdm import tqdm
 
 # Import our custom modules
-from s5_basecaller import S5Basecaller
-from multi_file_dataset import MultiFileNanoporeDataset, nanopore_collate, create_data_splits, IDX2BASE
+from S5Basecaller import S5Basecaller
+from NanoporeMultiDataset import MultiFileNanoporeDataset, nanopore_collate, create_data_splits, IDX2BASE
 
 
 def decode_ctc(predictions, blank=4):
