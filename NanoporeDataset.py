@@ -2,7 +2,7 @@ import numpy as np
 from torch.utils.data import Dataset
 import torch
 
-BASE2IDX = {'A': 0, 'C': 1, 'G': 2, 'T': 3, '-': 4}
+BASE2IDX = {'A': 0, 'C': 1, 'G': 2, 'T': 3, '': 4}
 IDX2BASE = {v: k for k, v in BASE2IDX.items()}
 
 
