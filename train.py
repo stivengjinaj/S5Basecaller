@@ -124,7 +124,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Train S5 Basecaller model")
     parser.add_argument("--npz_path", required=True, help="Path to .npz dataset")
     parser.add_argument("--save_path", default="s5_basecaller.pt", help="Path to save model")
-    parser.add_argument("--epochs", type=int, default=10, help="Number of training epochs")
+    parser.add_argument("--epochs", type=int, default=3, help="Number of training epochs")
     parser.add_argument("--batch_size", type=int, default=32, help="Batch size")
     parser.add_argument("--lr", type=float, default=1e-3, help="Learning rate")
     parser.add_argument("--model_dim", type=int, default=128, help="Model dimension")
